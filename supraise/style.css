@@ -128,7 +128,7 @@ h1 {
   font-size: clamp(1rem, 5vw, 3em);
   color: var(--i2);
   text-align: center;
-  animation:di 2s ease-in,glow3 2s infinite
+  animation:di 2s ease-in;
 }
 
 .tim {
