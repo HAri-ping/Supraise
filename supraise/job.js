@@ -12,7 +12,7 @@ function updateElapsedTime() {
   const seconds = Math.floor((elapsed % (1000 * 60)) / 1000); 
 
   // Update the timer display
-  timerElement.textContent = `${years} years, ${days} days, ${hours} hours, ${minutes} minutes, ${seconds} seconds`; 
+  timerElement.textContent = `${years} years, ${days} days, ${hours} hours, ${minutes} minutes, ${seconds} seconds ago`; 
 }
 
 // Call the updateElapsedTime function every second
