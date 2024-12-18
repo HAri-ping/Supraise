@@ -47,8 +47,8 @@ body {
 
 .letter {
   opacity: 0;
-  transform: translateX(-1000vw);
-  animation: slideIn 3s forwards ease-in;
+  transform: translateX(-100vw);
+  animation: slideIn 2s forwards ease-in-out;
   
   
 }
