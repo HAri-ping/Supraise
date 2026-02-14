@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>To My Dheena </title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #ff9aa2 0%, #ffb7b2 30%, #ffd4d4 70%, #ff9aa2 100%);
+      color: #333;
+      min-height: 100vh;
+      overflow-x: hidden;
+      background-attachment: fixed;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 20px;
+      text-align: center;
+    }
+
+    h1 {
+      font-family: 'Dancing Script', cursive;
+      font-size: clamp(3.5rem, 12vw, 8rem);
+      color: #fff;
+      text-shadow: 0 0 30px rgba(255, 105, 180, 0.8);
+      margin: 40px 0 20px;
+      animation: float 7s ease-in-out infinite;
+    }
+
+    .heart-beat {
+      color: #e63946;
+      display: inline-block;
+      animation: heartbeat 1.2s infinite;
+    }
+
+    .photos {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 25px;
+      margin: 50px 0;
+    }
+
+    .photo-frame {
+      width: 280px;
+      height: 340px;
+      background: white;
+      padding: 12px;
+      border-radius: 18px;
+      box-shadow: 0 15px 35px rgba(0,0,0,0.25),
+                  inset 0 0 0 8px #fff0f5;
+      transform: rotate(-2deg);
+      transition: all 0.4s ease;
+      overflow: hidden;
+    }
+
+    .photo-frame:nth-child(even) {
+      transform: rotate(3deg);
+    }
+
+    .photo-frame:hover {
+      transform: scale(1.08) rotate(0deg) !important;
+      box-shadow: 0 25px 50px rgba(0,0,0,0.35),
+                  inset 0 0 0 10px #fff0f5;
+      z-index: 10;
+    }
+
+    .photo-frame img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 10px;
+      border: 5px solid #fff;
+    }
+
+    .message {
+      max-width: 700px;
+      margin: 60px auto;
+      background: rgba(255, 255, 255, 0.92);
+      padding: 45px 35px;
+      border-radius: 28px;
+      box-shadow: 0 20px 60px rgba(0,0,0,0.2);
+      backdrop-filter: blur(8px);
+      border: 2px solid rgba(255, 182, 193, 0.6);
+    }
+
+    .message h2 {
+      font-family: 'Dancing Script', cursive;
+      font-size: 3.8rem;
+      color: #d0006e;
+      margin-bottom: 25px;
+    }
+
+    .message p {
+      font-size: 1.25rem;
+      line-height: 1.8;
+      color: #444;
+      margin-bottom: 25px;
+    }
+
+    .signature {
+      font-family: 'Dancing Script', cursive;
+      font-size: 2.6rem;
+      color: #9d0208;
+      margin-top: 50px;
+    }
+
+    .floating-hearts {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      z-index: -1;
+      overflow: hidden;
+    }
+
+    .heart {
+      position: absolute;
+      font-size: 1.8rem;
+      animation: float-up linear forwards;
+      opacity: 0.7;
+    }
+
+    @keyframes float-up {
+      0%   { transform: translateY(100vh) rotate(0deg); opacity: 0.7; }
+      100% { transform: translateY(-15vh) rotate(360deg); opacity: 0; }
+    }
+
+    @keyframes heartbeat {
+      0%, 100% { transform: scale(1); }
+      50%      { transform: scale(1.25); }
+    }
+
+    @keyframes float {
+      0%, 100% { transform: translateY(0); }
+      50%      { transform: translateY(-20px); }
+    }
+
+    @media (max-width: 600px) {
+      h1 { font-size: clamp(3rem, 10vw, 5.5rem); }
+      .photo-frame { width: 240px; height: 300px; }
+      .message { padding: 35px 20px; }
+    }
+  </style>
+</head>
+<body>
+
+<div class="floating-hearts" id="hearts"></div>
+
+<div class="container">
+  <h1>Happy Valentine's Day<spam class="heart-beat"> ❤️</spam><br> My pretty cute bunny 🐰 !</h1>
+
+  <div class="photos">
+    <!-- === Replace these URLs with your girlfriend's photos === -->
+    <!-- You can upload them to imgur.com, postimages.org, freeimage.host, etc. -->
+    <!-- Or use Google Drive / Dropbox direct links (make sure they're public) -->
+
+    <div class="photo-frame"><img src="https://i.imgur.com/xxxxxxxx.jpg" alt="Her photo 1"></div>
+    <div class="photo-frame"><img src="https://i.imgur.com/yyyyyyyy.jpg" alt="Her photo 2"></div>
+    <div class="photo-frame"><img src="https://i.imgur.com/zzzzzzzz.jpg" alt="Her photo 3"></div>
+    <div class="photo-frame"><img src="https://i.imgur.com/wwwwwwww.jpg" alt="Her photo 4"></div>
+    
+    <!-- Add more if you want (copy-paste line above) -->
+  </div>
+
+  <div class="message">
+    <h2>My sweetest girl,</h2>
+    
+    <p>Every time I look at your photos I still get the same butterflies as the very first day.<br>
+    You make ordinary days feel like love songs and hard days feel bearable just because you're with  me.</p>
+    
+    <p>Thank you for your laugh, your kindness, your yaps at Midnights ,<br>
+    for the way you steal my heart and for choosing me every day.</p>
+    
+    <p>I don't promise you the whole universe…<br>
+    but I promise to love you with everything I have inside this one.</p>
+    
+    <p class="signature">Forever yours,<br>Hari 💌</p>
+  </div>
+</div>
+
+<script>
+// Floating hearts animation
+function createHeart() {
+  const heart = document.createElement('div');
+  heart.className = 'heart';
+  heart.innerHTML = ['❤️','💗','💜','💕','💞','🫀'][Math.floor(Math.random()*6)];
+  
+  heart.style.left = Math.random() * 100 + 'vw';
+  heart.style.fontSize = (Math.random() * 1.5 + 1.2) + 'rem';
+  heart.style.animationDuration = (Math.random() * 8 + 10) + 's';
+  heart.style.animationDelay = Math.random() * 5 + 's';
+  
+  document.getElementById('hearts').appendChild(heart);
+  
+  setTimeout(() => heart.remove(), 15000);
+}
+
+setInterval(createHeart, 400);
+
+// Optional: more hearts when page loads
+for(let i = 0; i < 15; i++) {
+  setTimeout(createHeart, i * 300);
+}
+</script>
+
+</body>
+</html>
